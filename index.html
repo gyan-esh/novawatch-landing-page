@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NovaWatch - Smartwatch</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #111827, #1e3a5f);
+        }
+
+        .feature-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-image {
+            transition: transform 0.4s ease;
+        }
+
+        .product-image:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ================= NAVIGATION ================= -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-6 py-4">
+
+            <div class="flex justify-between items-center">
+
+                <!-- Brand -->
+                <h1 class="text-2xl font-bold text-blue-700">
+                    NovaWatch
+                </h1>
+
+                <!-- Navigation Links -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-blue-600">
+                        Home
+                    </a>
+
+                    <a href="#features" class="hover:text-blue-600">
+                        Features
+                    </a>
+
+                    <a href="#benefits" class="hover:text-blue-600">
+                        Benefits
+                    </a>
+
+                    <a href="#reviews" class="hover:text-blue-600">
+                        Reviews
+                    </a>
+
+                    <a href="#pricing" class="hover:text-blue-600">
+                        Pricing
+                    </a>
+                </div>
+
+                <!-- Mobile Button -->
+                <button class="md:hidden bg-blue-600 text-white px-4 py-2 rounded">
+                    Menu
+                </button>
+
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home" class="hero-gradient text-white">
+
+        <div class="max-w-7xl mx-auto px-6 py-20">
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                <!-- Hero Text -->
+                <div>
+
+                    <p class="text-blue-300 font-semibold mb-3">
+                        THE FUTURE ON YOUR WRIST
+                    </p>
+
+                    <h2 class="text-5xl md:text-6xl font-bold mb-6">
+                        NovaWatch Pro
+                    </h2>
+
+                    <p class="text-lg text-gray-300 mb-8">
+                        Track your health, stay connected and manage
+                        your everyday activities with our powerful
+                        and stylish smartwatch.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4">
+
+                        <a href="#pricing"
+                           class="bg-blue-600 hover:bg-blue-700
+                                  px-7 py-3 rounded-lg font-semibold">
+                            Buy Now
+                        </a>
+
+                        <a href="#features"
+                           class="border border-white
+                                  hover:bg-white hover:text-gray-900
+                                  px-7 py-3 rounded-lg font-semibold">
+                            Learn More
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product Image -->
+                <div class="flex justify-center">
+
+                    <div class="product-image
+                                bg-white rounded-3xl
+                                p-8 shadow-2xl">
+
+                        <div class="w-64 h-64 bg-gray-900
+                                    rounded-[45px]
+                                    flex items-center justify-center">
+
+                            <div class="text-center text-white">
+
+                                <div class="text-5xl font-bold">
+                                    10:30
+                                </div>
+
+                                <div class="text-blue-400 mt-3">
+                                    ❤️ 72 BPM
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURES ================= -->
+    <section id="features" class="py-20 bg-white">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-12">
+
+                <h2 class="text-4xl font-bold text-gray-900">
+                    Powerful Features
+                </h2>
+
+                <p class="text-gray-600 mt-4">
+                    Everything you need for a smarter lifestyle.
+                </p>
+
+            </div>
+
+
+            <!-- CSS Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Feature 1 -->
+                <article class="feature-card bg-gray-50 p-8 rounded-xl text-center">
+
+                    <div class="text-4xl mb-4">
+                        ❤️
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Health Tracking
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Monitor your heart rate and daily health
+                        activities with ease.
+                    </p>
+
+                </article>
+
+
+                <!-- Feature 2 -->
+                <article class="feature-card bg-gray-50 p-8 rounded-xl text-center">
+
+                    <div class="text-4xl mb-4">
+                        🏃
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Fitness Tracking
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Track steps, workouts, calories and
+                        daily activity.
+                    </p>
+
+                </article>
+
+
+                <!-- Feature 3 -->
+                <article class="feature-card bg-gray-50 p-8 rounded-xl text-center">
+
+                    <div class="text-4xl mb-4">
+                        🔔
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Smart Notifications
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Receive calls, messages and notifications
+                        directly on your wrist.
+                    </p>
+
+                </article>
+
+
+                <!-- Feature 4 -->
+                <article class="feature-card bg-gray-50 p-8 rounded-xl text-center">
+
+                    <div class="text-4xl mb-4">
+                        🔋
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Long Battery
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Enjoy up to 10 days of battery life
+                        on a single charge.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BENEFITS ================= -->
+    <section id="benefits" class="py-20 bg-gray-100">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                <div>
+
+                    <h2 class="text-4xl font-bold mb-6">
+                        Designed for Your Everyday Life
+                    </h2>
+
+                    <p class="text-gray-600 mb-6">
+                        NovaWatch Pro combines modern technology
+                        with a comfortable and stylish design.
+                    </p>
+
+                    <ul class="space-y-4">
+
+                        <li class="flex gap-3">
+                            <span class="text-blue-600 font-bold">✓</span>
+                            Lightweight and comfortable design
+                        </li>
+
+                        <li class="flex gap-3">
+                            <span class="text-blue-600 font-bold">✓</span>
+                            Water resistant body
+                        </li>
+
+                        <li class="flex gap-3">
+                            <span class="text-blue-600 font-bold">✓</span>
+                            Advanced health monitoring
+                        </li>
+
+                        <li class="flex gap-3">
+                            <span class="text-blue-600 font-bold">✓</span>
+                            Compatible with modern smartphones
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="bg-blue-700 text-white
+                            rounded-2xl p-10">
+
+                    <h3 class="text-3xl font-bold mb-5">
+                        Why Choose NovaWatch?
+                    </h3>
+
+                    <p class="text-blue-100 mb-6">
+                        Stay active, connected and organized
+                        throughout your day with one smart device.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6">
+
+                        <div>
+                            <p class="text-3xl font-bold">
+                                10+
+                            </p>
+
+                            <p class="text-blue-200">
+                                Days Battery
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="text-3xl font-bold">
+                                24/7
+                            </p>
+
+                            <p class="text-blue-200">
+                                Health Tracking
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section id="reviews" class="py-20 bg-white">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-12">
+
+                <h2 class="text-4xl font-bold">
+                    What Our Customers Say
+                </h2>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <article class="bg-gray-50 p-8 rounded-xl shadow">
+
+                    <p class="text-gray-600 mb-5">
+                        "The design is beautiful and the fitness
+                        tracking features are very useful."
+                    </p>
+
+                    <h3 class="font-bold">
+                        — Rahul
+                    </h3>
+
+                </article>
+
+
+                <article class="bg-gray-50 p-8 rounded-xl shadow">
+
+                    <p class="text-gray-600 mb-5">
+                        "I love the battery life. I don't have to
+                        charge it every day."
+                    </p>
+
+                    <h3 class="font-bold">
+                        — Priya
+                    </h3>
+
+                </article>
+
+
+                <article class="bg-gray-50 p-8 rounded-xl shadow">
+
+                    <p class="text-gray-600 mb-5">
+                        "A simple and stylish smartwatch for
+                        everyday use."
+                    </p>
+
+                    <h3 class="font-bold">
+                        — Arjun
+                    </h3>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRICING / CTA ================= -->
+    <section id="pricing" class="py-20 bg-gray-900 text-white">
+
+        <div class="max-w-4xl mx-auto text-center px-6">
+
+            <h2 class="text-4xl font-bold mb-5">
+                Get Your NovaWatch Pro
+            </h2>
+
+            <p class="text-gray-300 mb-8">
+                Upgrade your everyday life with smarter technology.
+            </p>
+
+            <div class="text-5xl font-bold mb-8">
+                ₹4,999
+            </div>
+
+            <button class="bg-blue-600 hover:bg-blue-700
+                           px-10 py-4 rounded-lg
+                           font-bold text-lg">
+                Buy Now
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-black text-gray-300 py-10">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div>
+
+                    <h3 class="text-xl font-bold text-white mb-3">
+                        NovaWatch
+                    </h3>
+
+                    <p>
+                        Smart technology for a smarter lifestyle.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3 class="text-xl font-bold text-white mb-3">
+                        Contact
+                    </h3>
+
+                    <p>Email: support@novawatch.com</p>
+                    <p>Phone: +91 98765 43210</p>
+
+                </div>
+
+
+                <div>
+
+                    <h3 class="text-xl font-bold text-white mb-3">
+                        Follow Us
+                    </h3>
+
+                    <p>
+                        Instagram | Facebook | LinkedIn
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="border-t border-gray-700
+                        mt-8 pt-6 text-center">
+
+                <p>
+                    © 2026 NovaWatch. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
